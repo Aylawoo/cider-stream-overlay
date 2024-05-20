@@ -53,10 +53,10 @@ function getSongInfo(title, artist, timer, progress) {
 }
 
 window.addEventListener("load", (event) => {
-    var titleElem = document.getElementById("songTitle");
-    var artistElem = document.getElementById("songArtist");
-    var timerElem = document.getElementById("timer");
-    var progressElem = document.getElementById("progressPercent");
+    let titleElem = document.getElementById("songTitle");
+    let artistElem = document.getElementById("songArtist");
+    let timerElem = document.getElementById("timer");
+    let progressElem = document.getElementById("progressPercent");
 
     getSongInfo(titleElem, artistElem, timerElem, progressElem);
     setInterval(getSongInfo, 1000, titleElem, artistElem, timerElem, progressElem);
