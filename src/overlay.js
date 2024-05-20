@@ -42,8 +42,6 @@ function getSongInfo(title, artist, timer, progress) {
     fetch("http://localhost:10769/currentPlayingSong")
         .then(response => response.json())
         .then((data) => {
-            console.log(data);
-
             let playbackProgress = data.info.currentPlaybackTime;
             let songLength = data.info.durationInMillis / 1000;
 
