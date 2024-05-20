@@ -1,0 +1,61 @@
+* {
+    font-family: "Roboto", sans-serif;
+    color: #F3F3F7;
+    text-align: center;
+}
+
+#musicBox {
+    background-color: #2F2F37EE;
+    border-radius: 8px;
+
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#musicBox > h1 {
+    padding-top: 0.1em;
+}
+
+#musicBox > h3 {
+    color: #D2D2E2;
+    font-style:  italic;
+
+    margin-top: -1em;
+}
+
+#progress {
+    background-color: #60606CEE;
+    border-radius: 8px;
+
+    padding-block: 0.1em;
+
+    margin-top: -0.75em;
+
+    height: 1em;
+    width: 100%;
+}
+
+#progress > p {
+    position: relative;
+
+    transform: translate(0em, -1.1em);
+
+    z-index: 1;
+}
+
+#progressPercent {
+    position: relative;
+
+    background-color: #A967CEEE;
+    border-radius: 8px;
+
+    padding-block: 0.1em;
+
+    height: 100%;
+    width: 0%;
+    transform: translate(0em, -3.3em);
+
+    z-index: 0;
+    transition: width 1s linear;
+}
