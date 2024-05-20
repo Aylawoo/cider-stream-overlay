@@ -11,13 +11,15 @@
     padding-bottom: 0.5em;
     padding-right: 0.5em;
     padding-left: 0.5em;
+
+    white-space: nowrap;
 }
 
-#musicBox > h1 {
+#songTitle {
     padding-top: 0.1em;
 }
 
-#musicBox > h3 {
+#songArtist {
     color: #D2D2E2;
     font-style:  italic;
 
