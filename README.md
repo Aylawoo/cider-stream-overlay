@@ -12,4 +12,4 @@ This is designed for Cider 2, tested on 2.4.0_1 and newer. Cider Classic is unsu
 3) Play your music :)
 
 ## Example
-![](https://i.imgur.com/sYT32fp.png)
+![](https://i.imgur.com/oMgKvDV.png)
