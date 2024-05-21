@@ -50,6 +50,16 @@ function getSongInfo(title, artist, timer, progress) {
             timer.innerText = `${makeTimestamp(playbackProgress)} / ${makeTimestamp(songLength)}`
             progress.style.width = `${(playbackProgress / songLength) * 100}%`
         });
+
+        let container = document.getElementById("musicBox");
+
+        if (container.offsetWidth < title.scrollWidth + 12) {
+            title.style.transform = "translateX(100%)";
+            title.style.animation = "scroller 16s linear infinite";
+        } else {
+            title.style.transform = "translateX(0)";
+            title.style.animation = "none";
+        }
 }
 
 window.addEventListener("load", (event) => {

@@ -17,6 +17,9 @@
 
 #songTitle {
     padding-top: 0.1em;
+
+    transform: translateX(100%);
+    animation: scroller 16s linear infinite;
 }
 
 #songArtist {
@@ -60,4 +63,13 @@
 
     z-index: 0;
     transition: width 1s linear;
+}
+
+@keyframes scroller {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
