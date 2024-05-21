@@ -13,6 +13,7 @@
     padding-left: 0.5em;
 
     white-space: nowrap;
+    overflow: hidden;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,7 +21,9 @@
 
 #songTitle {
     -webkit-text-stroke: #1C1C21AA 1px;
-    padding-top: 0.1em;
+
+    margin-top: 0em;
+    padding-top: 0.2em;
 
     transform: translateX(100%);
     animation: scroller 16s linear infinite;
