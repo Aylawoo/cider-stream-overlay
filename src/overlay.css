@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-#progress > p {
+#timer {
     position: relative;
 
     transform: translate(0em, -1.1em);
