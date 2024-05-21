@@ -3,6 +3,11 @@ A livestreaming overlay for the Cider app
 
 Lightweight, efficient, and customizable. Written in pure HTML/CSS/JS.
 
+## Features
+* Fully customizable with basic web design knowledge
+* Displays current song, artist, and time elspsed/song length
+* Displays album art for currently playing song
+
 ## WARNING
 This is designed for Cider 2, tested on 2.4.0_1 and newer. Cider Classic is unsupported.
 
