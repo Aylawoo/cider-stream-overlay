@@ -19,6 +19,7 @@
 }
 
 #songTitle {
+    -webkit-text-stroke: #1C1C21AA 1px;
     padding-top: 0.1em;
 
     transform: translateX(100%);
@@ -26,6 +27,7 @@
 }
 
 #songArtist {
+    -webkit-text-stroke: #1C1C2199 1px;
     color: #D2D2E2;
     font-style:  italic;
 
