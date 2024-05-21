@@ -39,19 +39,22 @@ function makeTimestamp(totalSeconds) {
  * @param {HTMLElement} progress The progress bar itself
  */
 function getSongInfo(title, artist, timer, progress) {
+    let container = document.getElementById("musicBox");
+
     fetch("http://localhost:10769/currentPlayingSong")
         .then(response => response.json())
         .then((data) => {
+            let art_url = data.info.artwork.url.replace(/(.{12})\w$/, "600x600bb.jpg");
             let playbackProgress = data.info.currentPlaybackTime;
             let songLength = data.info.durationInMillis / 1000;
+
+            container.style.backgroundImage = `url(${art_url})`;
 
             title.innerText = data.info.name;
             artist.innerText = data.info.artistName;
             timer.innerText = `${makeTimestamp(playbackProgress)} / ${makeTimestamp(songLength)}`
             progress.style.width = `${(playbackProgress / songLength) * 100}%`
         });
-
-        let container = document.getElementById("musicBox");
 
         if (container.offsetWidth < title.scrollWidth + 12) {
             title.style.transform = "translateX(100%)";
