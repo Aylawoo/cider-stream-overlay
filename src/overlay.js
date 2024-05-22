@@ -25,6 +25,12 @@ function padNumber(number, target_length) {
 function makeTimestamp(totalSeconds) {
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = totalSeconds - minutes * 60;
+
+    if (seconds == 60) {
+        seconds = 0;
+        minutes += 1;
+    }
+
     minutes = minutes.toFixed(0);
     seconds = seconds.toFixed(0);
 
