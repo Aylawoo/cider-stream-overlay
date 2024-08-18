@@ -47,7 +47,7 @@ function makeTimestamp(totalSeconds) {
 function getSongInfo(title, artist, timer, progress) {
     let container = document.getElementById("musicBox");
 
-    fetch("http://localhost:10769/currentPlayingSong")
+    fetch("http://localhost:10767/api/v1/playback/now-playing")
         .then(response => response.json())
         .then((data) => {
             let art_url = data.info.artwork.url.replace(/(.{12})\w$/, "600x600bb.jpg");
